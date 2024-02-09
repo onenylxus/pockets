@@ -1,9 +1,9 @@
 import { Text, View } from 'react-native';
 
-export default HomeScreen = () => {
+export default ProfileScreen = () => {
 	return (
 		<View className="flex-1 items-center justify-center bg-zinc-100">
-			<Text>Home Screen</Text>
+			<Text>Profile Screen</Text>
 		</View>
 	);
 };
