@@ -1,11 +1,11 @@
 import { Text, View } from 'react-native';
 
-const HomeScreen = () => {
+const WalletScreen = () => {
   return (
     <View className="flex-1 items-center justify-center bg-zinc-100">
-      <Text>Home Screen</Text>
+      <Text>Wallet Screen</Text>
     </View>
   );
 };
 
-export default HomeScreen;
+export default WalletScreen;
