@@ -1,11 +1,9 @@
-import { Text, View } from 'react-native';
+import { SafeAreaView, Text } from 'react-native';
 
-const HomeScreen = () => {
+export const HomeScreen = () => {
   return (
-    <View className="flex-1 items-center justify-center bg-zinc-100">
+    <SafeAreaView className="flex-1 items-center justify-center bg-zinc-50">
       <Text>Home Screen</Text>
-    </View>
+    </SafeAreaView>
   );
 };
-
-export default HomeScreen;
