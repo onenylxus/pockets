@@ -1,8 +1,8 @@
+import { LandingScreen } from '../screens/LandingScreen';
+import { MainTab } from './MainTab';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import LandingScreen from '../screens/LandingScreen';
-import MainTab from './MainTab';
 
-const AppStack = () => {
+export const AppStack = () => {
   const Stack = createNativeStackNavigator();
 
   return (
@@ -12,5 +12,3 @@ const AppStack = () => {
     </Stack.Navigator>
   );
 };
-
-export default AppStack;

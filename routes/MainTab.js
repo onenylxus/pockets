@@ -1,11 +1,11 @@
+import { HomeScreen } from '../screens/HomeScreen';
 import { Ionicons } from '@expo/vector-icons';
+import { ProfileScreen } from '../screens/ProfileScreen';
+import { StatisticsScreen } from '../screens/StatisticsScreen';
+import { WalletScreen } from '../screens/WalletScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from '../screens/HomeScreen';
-import ProfileScreen from '../screens/ProfileScreen';
-import StatisticsScreen from '../screens/StatisticsScreen';
-import WalletScreen from '../screens/WalletScreen';
 
-const MainTab = () => {
+export const MainTab = () => {
   const Tab = createBottomTabNavigator();
 
   const screenOptions = ({ route }) => ({
@@ -42,5 +42,3 @@ const MainTab = () => {
     </Tab.Navigator>
   );
 };
-
-export default MainTab;

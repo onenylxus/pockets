@@ -1,3 +1,4 @@
+import { AppStack } from './routes/AppStack';
 import {
   Inter_400Regular,
   Inter_500Medium,
@@ -7,7 +8,6 @@ import {
 } from '@expo-google-fonts/inter';
 import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
-import AppStack from './routes/AppStack';
 
 const App = () => {
   const [fontsLoaded] = useFonts({

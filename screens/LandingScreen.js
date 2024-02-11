@@ -1,8 +1,9 @@
 import { Pressable, SafeAreaView, Text, View } from 'react-native';
+import { SolidButton } from '../components/SolidButton';
 import { useNavigation } from '@react-navigation/native';
 import TransferSvg from '../assets/transfer.svg';
 
-const LandingScreen = () => {
+export const LandingScreen = () => {
   const navigation = useNavigation();
 
   const onPress = () => {
@@ -15,13 +16,7 @@ const LandingScreen = () => {
       <Text className="font-inter font-bold text-4xl text-center leading-[38px] text-teal-600">
         Spend Smarter{'\n'}Save More
       </Text>
-      <Pressable className="w-full h-14 mt-6" onPress={onPress}>
-        <View className="flex h-14 rounded-full items-center justify-center bg-teal-600">
-          <Text className="font-inter font-semibold text-lg text-teal-50">
-            Get Started
-          </Text>
-        </View>
-      </Pressable>
+      <SolidButton className="mt-6" onPress={onPress} text="Get Started" />
       <View className="flex mt-4 flex-row">
         <Text className="font-inter font-normal text-zinc-800">
           Already have an account?
@@ -33,5 +28,3 @@ const LandingScreen = () => {
     </SafeAreaView>
   );
 };
-
-export default LandingScreen;
