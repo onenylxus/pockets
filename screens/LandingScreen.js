@@ -11,13 +11,13 @@ export const LandingScreen = () => {
   };
 
   return (
-    <SafeAreaView className="flex flex-1 px-8 py-16 items-center justify-end bg-zinc-50">
+    <SafeAreaView className="flex flex-1 items-center justify-end bg-zinc-50 px-8 py-16">
       <TransferSvg width="80%" />
-      <Text className="font-inter font-bold text-4xl text-center leading-[38px] text-teal-600">
+      <Text className="font-inter text-center text-4xl font-bold leading-[38px] text-teal-600">
         Spend Smarter{'\n'}Save More
       </Text>
       <SolidButton className="mt-6" onPress={onPress} text="Get Started" />
-      <View className="flex mt-4 flex-row">
+      <View className="mt-4 flex flex-row">
         <Text className="font-inter font-normal text-zinc-800">
           Already have an account?
         </Text>

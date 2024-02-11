@@ -10,7 +10,7 @@ export const TabBar = ({ state, descriptors, navigation, ...props }) => {
   return (
     <>
       <View
-        className="absolute flex bottom-0 w-full h-20 bg-zinc-50 flex-row justify-evenly items-center space-x-8"
+        className="absolute bottom-0 flex h-20 w-full flex-row items-center justify-evenly space-x-8 bg-zinc-50"
         style={{ elevation: 8 }}
         {...props}
       >
@@ -51,7 +51,7 @@ export const TabBar = ({ state, descriptors, navigation, ...props }) => {
           const isSpacing = state.index === 0 && index === 1;
           return (
             <TouchableOpacity
-              className={`flex justify-center items-center ${isSpacing && 'mr-16'}`}
+              className={`flex items-center justify-center ${isSpacing && 'mr-16'}`}
               accessibilityRole="button"
               accessibilityState={isFocused ? { selected: true } : {}}
               accessibilityLabel={options.tabBarAccessibilityLabel}
@@ -70,7 +70,7 @@ export const TabBar = ({ state, descriptors, navigation, ...props }) => {
         })}
       </View>
       {state.index === 0 && (
-        <View className="absolute flex bottom-12 w-full items-center">
+        <View className="absolute bottom-12 flex w-full items-center">
           <CircleButton onPress={onCirclePress} iconName="add" />
         </View>
       )}

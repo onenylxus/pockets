@@ -4,7 +4,7 @@ import { Pressable } from 'react-native';
 export const CircleButton = ({ onPress, iconName, ...props }) => {
   return (
     <Pressable
-      className="flex w-16 h-16 rounded-full justify-center items-center flex-1 bg-teal-600"
+      className="flex h-16 w-16 flex-1 items-center justify-center rounded-full bg-teal-600"
       onPress={onPress}
       {...props}
     >
